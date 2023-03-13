@@ -173,5 +173,12 @@ background-color: var(--rose);
     {
         font-size: 2em
     }
-
+    .nav-link
+    {
+        font-size: 3em;
+    }
+    .logo
+    {
+        font-size: 5em;
+    }
 }
