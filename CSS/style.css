@@ -1,0 +1,177 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap%');
+
+*
+{
+margin: 0;
+padding: 0;
+}
+
+:root {
+--rose: #EE396A;
+--beige: #FFE5EC;
+--blancBeige: #FFF9FB;
+--gris: #3c414f;
+--roseSang: #C4234F;
+--white: #ffffff;
+}
+
+body
+{
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+font-family: 'Dosis', sans-serif;
+}
+
+.navbar
+{
+background-color: var(--rose);
+}
+
+.nav-link
+{
+    font-size: 1.3em;
+}
+
+.footer
+{
+    background-color: var(--gris);
+}
+
+.ul,li,a
+{
+    color: var(--white);
+    list-style: none;
+    text-decoration: none;
+}
+
+.inputReseaux
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--blancBeige);
+}
+
+.sectionContact
+{
+    display: flex;
+    min-width: 1100px;
+    min-height: 550px;
+    position: relative;
+    border-radius: 25px;
+}
+
+.contactInfo
+{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    border-radius: 25px;
+    height: calc(100% - 80px);
+    background-color: var(--rose);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.sectionContact .contactCalendly
+{
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 150px;
+    width: calc(100% - 150px);
+    height: 100%;
+    border-radius: 25px;
+    background-color: var(--beige);
+}
+
+.info, .info>li
+{
+    position: relative;
+    margin: 20px 0;
+}
+
+.info li span  :nth-child(1)
+{
+    width: 30px;
+    min-width: 30px;
+}
+
+.info li span  :nth-child(1) img
+{
+    max-width: 100%;
+}
+
+/*
+@media (max-width: 1200px) {
+    .sectionContact
+    {
+        width: 100%;
+        min-width: auto;
+    }
+    .contactInfo
+    {
+        top: 0;
+        height: 550px;
+        position: relative;
+        border-radius: 0;
+    }
+    .sectionContact .contactCalendly
+    {
+        position: relative;
+        width: calc(100%);
+        padding-left: 0px;
+        margin-left: 0px;
+        padding: 40px;
+        height: 550px;
+        border-radius: 0;
+    }
+}
+*/
+
+@media (max-width: 991px) {
+    .sectionContact
+    {
+        width: 100%;
+        min-width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionContact .contactInfo
+    {
+        top: 0;
+        position: relative;
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+    }
+    .sectionContact .contactCalendly
+    {
+        position: relative;
+        margin-left: 0px;
+        padding: 40px;
+        border-radius: 0;
+
+        width: 100%;
+        height: auto;
+    }
+    .sci
+    {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    icon
+    {
+        font-size: 2em
+    }
+
+}
